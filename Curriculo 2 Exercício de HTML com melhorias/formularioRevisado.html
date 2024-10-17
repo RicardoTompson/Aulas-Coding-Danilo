@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Freelancer</title>
+    <!-- Inclusão do Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4"><a href="index.html">Formulário de Freelancer</a></h1>
+    
+        <form>
+            <fieldset class="border p-4 mb-4">
+                <legend>Dados Pessoais</legend>
+                <div class="form-group">
+                    <label for="nome">Nome:*</label>
+                    <input type="text" class="form-control" name="nome" id="nome" placeholder="Insira seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="sobrenome">Sobrenome:*</label>
+                    <input type="text" class="form-control" name="sobrenome" id="sobrenome" placeholder="Insira seu sobrenome" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:*</label>
+                    <input type="tel" class="form-control" name="telefone" id="telefone" placeholder="(99)99999-9999" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:*</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Insira seu e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="estado">Estado:</label>
+                    <select class="form-control" id="estado" name="estado" required>
+                        <option value="" disabled selected>Selecione um Estado</option>
+                        <!-- Opções de estados -->
+                        <option value="Acre">Acre</option>
+                        <option value="Alagoas">Alagoas</option>
+                        <option value="Amapá">Amapá</option>
+                        <option value="Amazonas">Amazonas</option>
+                        <option value="Bahia">Bahia</option>
+                        <option value="Ceará">Ceará</option>
+                        <option value="Distrito Federal">Distrito Federal</option>
+                        <option value="Espírito Santo">Espírito Santo</option>
+                        <option value="Goiás">Goiás</option>
+                        <option value="Maranhão">Maranhão</option>
+                        <option value="Mato Grosso">Mato Grosso</option>
+                        <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                        <option value="Minas Gerais">Minas Gerais</option>
+                        <option value="Pará">Pará</option>
+                        <option value="Paraíba">Paraíba</option>
+                        <option value="Paraná">Paraná</option>
+                        <option value="Pernambuco">Pernambuco</option>
+                        <option value="Piauí">Piauí</option>
+                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                        <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                        <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                        <option value="Rondônia">Rondônia</option>
+                        <option value="Roraima">Roraima</option>
+                        <option value="Santa Catarina">Santa Catarina</option>
+                        <option value="São Paulo">São Paulo</option>
+                        <option value="Sergipe">Sergipe</option>
+                        <option value="Tocantins">Tocantins</option>
+
+                        <!-- Adicione os demais estados aqui -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:*</label>
+                    <textarea class="form-control" name="mensagem" id="mensagem" rows="3" placeholder="Informe o que deseja." required></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="border p-4 mb-4">
+                <legend>Dados Profissionais</legend>
+                <div class="form-group">
+                    <label for="Idioma">Idioma:</label>
+                    <select class="form-control" id="Idioma" name="Idioma" required>
+                        <option value="" disabled selected>Selecione o Idioma</option>
+                        <option value="Português">Português</option>
+                        <option value="Inglês">Inglês</option>
+                        <option value="Francês">Francês</option>
+                        <option value="Espanhol">Espanhol</option>
+                        <option value="Italiano">Italiano</option>
+                        <option value="Chinês">Chinês</option>
+                        <option value="Aramaico">Aramaico</option>
+                        <!-- Adicione outros idiomas aqui -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Selecionar-AreaDeInteresse">Área de Interesse:</label>
+                    <select class="form-control" id="Selecionar-AreaDeInteresse" name="areaInteresse" required>
+                        <option value="" disabled selected>Selecione Área de Interesse</option>
+                        <option value="Desenvolvimento de Software">Desenvolvimento de Software</option>
+                        <option value="Banco de Dados">Banco de Dados</option>
+                        <option value="Segurança da Informação">Segurança da Informação</option>
+                        <option value="Arquitetura de Sistemas">Arquitetura de Sistemas</option>
+                        <option value="Integração de Sistemas">Integração de Sistemas</option>
+                        <option value="Inteligência Artificial e Machine Learning">Inteligência Artificial e Machine Learning</option>
+                        <option value="DevOps e CI/CD">DevOps e CI/CD</option>
+                        <!-- Adicione outras áreas de interesse aqui -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="file">Protótipo:</label>
+                    <input type="file" class="form-control-file" id="file" name="file">
+                </div>
+                <div class="form-group">
+                    <label for="Selecionar-LinguagemPreferida">Linguagem Preferida:</label>
+                    <select class="form-control" id="Selecionar-LinguagemPreferida" name="linguagemPreferida" required>
+                        <option value="" disabled selected>Selecione a Linguagem preferida</option>
+                        <option value="Java">Java</option>
+                        <option value="C">C</option>
+                        <option value="C++">C++</option>
+                        <option value="C#">C#</option>
+                        <option value="PHP">PHP</option>
+                        <option value="Javascript">Javascript</option>
+                        <option value="HTML/CSS">HTML/CSS</option>
+                        <option value="Python">Python</option>
+                        <option value="TypeScript">TypeScript</option>
+                        <option value="Scratch">Scratch</option>
+                        <!-- Adicione outras linguagens aqui -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Que tipo de Desenvolvedor você é?</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="desenvolvedor" value="frontend" required>
+                        <label class="form-check-label">Front-end</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="desenvolvedor" value="backend">
+                        <label class="form-check-label">Back-end</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="desenvolvedor" value="fullstack">
+                        <label class="form-check-label">Fullstack</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Serioridade">Senioridade:</label>
+                    <select class="form-control" id="Serioridade" name="senioridade" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="Junior">Junior</option>
+                        <option value="Pleno">Pleno</option>
+                        <option value="Senior">Senior</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Banco de Dados:</label><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="banco" value="MySQL" id="mysql">
+                        <label class="form-check-label" for="mysql">MySQL</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="banco" value="Postgresql" id="postgresql">
+                        <label class="form-check-label" for="postgresql">Postgresql</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="banco" value="MongoDB" id="mongodb">
+                        <label class="form-check-label" for="mongodb">MongoDB</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="banco" value="N/A" id="na">
+                        <label class="form-check-label" for="na">N/A</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="banco" value="Outra" id="outra">
+                        <label class="form-check-label" for="outra">Outra</label>
+                    </div>
+                    <!-- Adicione outros bancos de dados aqui -->
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Turno para Reuniões:*</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="turno" value="Manhã" id="manha" required>
+                        <label class="form-check-label" for="manha">Manhã</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="turno" value="Tarde" id="tarde" required>
+                        <label class="form-check-label" for="tarde">Tarde</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="turno" value="Noite" id="noite" required>
+                        <label class="form-check-label" for="noite">Noite</label>
+                    </div>
+                    <!-- Adicione outros turnos aqui -->
+                </div>
+                <div class="form-group">
+                    <label for="horario">Horário Sugerido:</label>
+                    <input type="time" class="form-control" id="horario" name="horario">
+                </div>
+                <div class="form-group">
+                    <label for="dataEntrega">Data Prevista de Entrega:*</label>
+                    <input type="date" class="form-control" id="dataEntrega" name="dataEntrega" required>
+                </div>
+
+                <h6>* Campos Obrigatórios</h6>
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-secondary">Limpar</button>
+        </form>
+    </div>
+
+    <!-- Inclusão do JavaScript do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
